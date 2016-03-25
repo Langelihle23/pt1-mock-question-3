@@ -22,6 +22,31 @@ private:
 	int num;				// numerator;
 	int denom;				// denominator;
 public:
-	Fraction(int n, int d) : num(n), denum(d) { };
+	Fraction(int n, int d) : num(n), denom(d) { };
 	void print() { cout << num << "/" << denom; };
+	friend ostream &operator>(ostream &p, Fraction &f);
 };
+
+ostream &operator>(ostream &p, Fraction &f){
+	if (f.num > f.denom)
+	{
+		int rem = f.num - f.denom;
+		p << "Your answer is" << rem << " " << f.num << "/" << f.denom << endl;
+	}
+}
+
+int add(int Num1,int Denom1){
+	int numerator;
+	
+	
+}
+
+int add(){
+
+
+}
+
+int main(){
+
+
+}
